@@ -1,5 +1,26 @@
 export const projects = [
   {
+    id: 'liz-sofa-2026',
+    title: '顾家利兹沙发 · 入户实景',
+    tag: '摄影',
+    desc: '为顾家家居利兹沙发拍摄入户实景，在真实居家环境中捕捉沙发的质感、尺度与光影关系。',
+    year: '2026',
+    image: '/images/liz-sofa/01-cover.jpg',
+    images: [
+      '/images/liz-sofa/01-cover.jpg',
+      '/images/liz-sofa/02.jpg',
+      '/images/liz-sofa/03.jpg',
+      '/images/liz-sofa/04.jpg',
+      '/images/liz-sofa/05.jpg',
+      '/images/liz-sofa/06.jpg',
+      '/images/liz-sofa/07.jpg',
+    ],
+    role: '摄影师 / 后期',
+    client: '顾家家居',
+    fullDescription: '为顾家家居“利兹”系列沙发拍摄入户实景照片。不同于影棚摆拍，这次拍摄在真实居住空间中完成，旨在还原沙发在日常生活里的质感与氛围。\n\n拍摄过程中充分利用了自然光与室内暖光的多层次叠加，通过不同时段的光线变化捕捉沙发的皮纹肌理与体量感。构图上兼顾产品展示与空间叙事，让沙发的舒适感“被看见”。\n\n后期阶段用 Lightroom 批量筛选与调色定调，Photoshop 精修细节（去杂光、统一色温、优化明暗层次），Image2 辅助色彩校准，确保成片在冷暖屏上都保持一致的质感呈现。',
+    tech: ['Lightroom Classic', 'Photoshop', 'Image2', 'Sony A7M4'],
+  },
+  {
     id: 'brand-visual-system',
     title: '品牌视觉系统',
     tag: '品牌设计',

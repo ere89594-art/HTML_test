@@ -4,7 +4,15 @@
       <RouterLink to="/works" class="back-link">← 返回作品</RouterLink>
 
       <div class="hero-image">
-        <img :src="project.images[0]" :alt="project.title" />
+        <template v-if="project.video">
+          <iframe
+            :src="project.video"
+            frameborder="0"
+            allowfullscreen
+            class="hero-video"
+          ></iframe>
+        </template>
+        <img v-else :src="project.images[0]" :alt="project.title" />
       </div>
 
       <div class="project-body">
@@ -95,10 +103,15 @@ const descriptionParagraphs = computed(() =>
   margin-bottom: 3rem;
 }
 
-.hero-image img {
+.hero-image img,
+.hero-video {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.hero-video {
+  border: 0;
 }
 
 .project-body {
